@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://lea-png.github.io/EIA1-SoSe2020/sternhg.png);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: 250px;
+    margin-right: auto;
+}
+
+.pinguin {
+position: absolute;
+margin-left: 268px;
+margin-top: 105px;
+}
+
+.shell {
+position: absolute;
+margin-left: -250px;
+margin-top: 155px;
+}
+
+.h1 {
+    color: darkblue;
+    position: absolute;
+    margin-top: -150px;
+}
+
+.Gedicht {
+font-size: x-large;
+position: absolute;
+color: rgb(78, 183, 197);
+}
+
