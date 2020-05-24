@@ -121,3 +121,24 @@ iframe {
     margin-left: 185px;
     margin-top: 140px;
 }
+
+h3 {
+    font-size: xx-large;
+    color: rgb(174, 214, 255);
+}
+
+.formular {
+    position: absolute;
+    margin-left: -50px;
+}
+
+p1 {
+position: absolute;
+margin-left: 20px;
+
+}
+
+p2 {
+    position: absolute;
+   margin-left: 20px;
+}
