@@ -1,6 +1,5 @@
-body{
-    background-image: url(https://lea-png.github.io/EIA1-SoSe2020/sternhg.png);
-}
+
+
 
 .container {
     display: flex;
@@ -35,3 +34,90 @@ position: absolute;
 color: rgb(78, 183, 197);
 }
 
+.muschel1 {
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+
+.muschel2 {
+    position: absolute;
+    margin-top: -50px;
+   
+}
+
+.muschel3 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.perle1 {
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.perle2 {
+    position: absolute;
+    margin-top: -50px;
+    opacity: 0;
+}
+
+.perle3 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.perle1:hover, .perle2:hover, .perle3:hover {
+    opacity: 1;
+}
+
+h2 {
+    font-size: xx-large;
+    position: absolute;
+    color:purple;
+    margin-top: -120px;
+}
+
+.row {
+    position: absolute;
+}
+
+.row2 {
+    position: absolute;
+    margin-top: 120px;
+    padding: 50px;
+    font-size: 0.4cm;
+}
+
+.column {
+    color: rgb(102, 49, 11);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    width: 195px;
+   margin-left: 3px;
+   margin-top: -100px;
+}
+
+.column2 {
+    color: rgb(102, 49, 11);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    width: 170px;
+    margin-left: -10px;
+    margin-top: -100px;
+}
+
+iframe {
+    position: absolute;
+}
+
+.band {
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 140px;
+}
