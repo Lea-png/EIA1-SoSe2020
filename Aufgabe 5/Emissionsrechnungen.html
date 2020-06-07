@@ -5,48 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carbon Dioxide Emissions</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
-        <img src="europe.png" class="europe">
-        <img src="northamerica.png" class="northamerica">
-        <img src="southamerica.png" class="southamerica">
-        <img src="africa.png" class="africa">
-        <img src="asia.png" class="asia">
-        <img src="australia.png" class="australia">
+        <img onclick="EuropeFunction()" src="europe.png" class="europe">
+        <img onclick="NoAmFunction()" src="northamerica.png" class="northamerica">
+        <img onclick="SoAmFunction()" src="southamerica.png" class="southamerica">
+        <img onclick="AfricaFunction()" src="africa.png" class="africa">
+        <img onclick="AsiaFunction()" src="asia.png" class="asia">
+        <img onclick="AustraliaFunction()" src="australia.png" class="australia">
     </nav>
 
     <h1>
-        Carbon Dioxide Emissions in Europe
+        Carbon Dioxide Emissions in <span id="titleRegion">Europe</span>
     </h1>
+
+
+    <div class="chartWrapper">
+        <div id="chart"></div>
+    </div>
 
     <main>
         <section>
-            <h2>4209.3</h2>
-            <p>Emission absolute of Europe in 2018</p>
+            <h2 id="headline1">4209.3</h2>
+            <p id="text1">Emission absolute of Europe in 2018</p>
         </section>
-        
+
         <section>
-            <h2>4%</h2>
-            <p>Relative to total world's emission</p>
+            <h2 id="headline2">13.528%</h2>
+            <p id="text2">Relative to total world's emission</p>
         </section>
-        
+
         <section>
-            <h2>1.2%</h2>
-            <p>Growth rate between 2008 and 2018 (in %)</p>
+            <h2 id="headline3">-15.23%</h2>
+            <p id="text3">Growth rate between 2008 and 2018 (in %)</p>
         </section>
-        
+
         <section>
-            <h2>-400</h2>
-            <p>Growth rate between 2008 and 2018 (absolute)</p>
+            <h2 id="headline4">-756.4</h2>
+            <p id="text4">Growth rate between 2008 and 2018 (absolute)</p>
         </section>
     </main>
 
     <footer>
         <p>Values in kg CO2 per TJ. Source https://www.statista.com/</p>
     </footer>
-    
+    <script src="script.js" async></script>
+
 </body>
 </html>
