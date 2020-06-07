@@ -1,64 +1,56 @@
 "use strict";
-var eur08 = 4965.7;
-var eur = 4209.3;
-var afr08 = 1028;
-var afr = 1235.5;
-var samer08 = 1132.6;
-var samer = 1261.5;
-var asia08 = 12954.7;
-var asia = 16274.1;
-var namer08 = 6600.4;
-var namer = 6035.6;
-var aus08 = 1993;
-var aus = 2100.5;
-var gesamt = eur + afr + samer + namer + asia + aus;
-var proz1 = gesamt * 0.01;
-var eurorel = eur / proz1;
-var afrrel = afr / proz1;
-var asiarel = asia / proz1;
-var ausrel = aus / proz1;
-var samerrel = samer / proz1;
-var namerrel = namer / proz1;
-var eurov = eur08 * 0.01;
-var eurov2 = eur08 - eur;
-var eurov3 = eurov2 / eurov;
-var afrv = afr08 * 0.01;
-var afrv2 = afr08 - afr;
-var afrv3 = afrv2 / afrv;
-var samerv = samer08 * 0.01;
-var samerv2 = samer08 - samer;
-var samerv3 = samerv2 / samerv;
-var asiav = asia08 * 0.01;
-var asiav2 = asia08 - asia;
-var asiav3 = asiav2 / asiav;
-var namerv = namer08 * 0.01;
-var namerv2 = namer08 - namer;
-var namerv3 = namerv2 / namerv;
-var ausv = aus08 * 0.01;
-var ausv2 = aus08 - aus;
-var ausv3 = ausv2 / ausv;
-console.log("Die Emission von Europa ist : " + eur + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit :  " + eurorel + "%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + eurov3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + eurov2 + "kg C02");
-console.log("Die Emission von Asien ist : " + asia + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit :  " + asiarel + "%");
-console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um " + asiav3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + asiav2 + "kg C02");
-console.log("Die Emission von Afrika ist : " + afr + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit :  " + afrrel + "%");
-console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um " + afrv3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + afrv2 + "kg C02");
-console.log("Die Emission von Südamerika ist : " + samer + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit :  " + samerrel + "%");
-console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + samerv3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + samerv2 + "kg C02");
-console.log("Die Emission von Nordmerika ist : " + namer + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit :  " + namerrel + "%");
-console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + namerv3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + namerv2 + "kg C02");
-console.log("Die Emission von Australien ist : " + aus + "kg C02");
-console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit :  " + ausrel + "%");
-console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um " + ausv3 + "% verändert ");
-console.log("2018 im Vergleich zu 2008 sind das " + ausv2 + "kg C02");
+function EuropeFunction() {
+    document.getElementById(".titleRegion").innerHTML = "Europe";
+    document.getElementById("headline1").innerHTML = "4209.3";
+    document.getElementById("text1").innerHTML = "Emission absolute of Europe in 2018";
+    document.getElementById("headline2").innerHTML = "13.528%";
+    document.getElementById("headline3").innerHTML = "-15.23%";
+    document.getElementById("headline4").innerHTML = "-756.4";
+    document.getElementById("chart").setAttribute("style", "height: 14.80%");
+}
+function NoAmFunction() {
+    document.getElementById("titleRegion").innerHTML = "North America";
+    document.getElementById("headline1").innerHTML = "6035.6";
+    document.getElementById("text1").innerHTML = "Emission absolute of North America in 2018";
+    document.getElementById("headline2").innerHTML = "19,397%";
+    document.getElementById("headline3").innerHTML = "-8.56%";
+    document.getElementById("headline4").innerHTML = "-564.8";
+    document.getElementById("chart").setAttribute("style", "height: 20.465%");
+}
+function SoAmFunction() {
+    document.getElementById("titleRegion").innerHTML = "South America";
+    document.getElementById("headline1").innerHTML = "1261.5";
+    document.getElementById("text1").innerHTML = "Emission absolute of South America in 2018";
+    document.getElementById("headline2").innerHTML = "4.054%";
+    document.getElementById("headline3").innerHTML = "11.38%";
+    document.getElementById("headline4").innerHTML = "128.9";
+    document.getElementById("chart").setAttribute("style", "height: 4.126%");
+}
+function AfricaFunction() {
+    document.getElementById("titleRegion").innerHTML = "Africa";
+    document.getElementById("headline1").innerHTML = "1235.5";
+    document.getElementById("text1").innerHTML = "Emission absolute of Africa in 2018";
+    document.getElementById("headline2").innerHTML = "3,971%";
+    document.getElementById("headline3").innerHTML = "20,18%";
+    document.getElementById("headline4").innerHTML = "207.5";
+    document.getElementById("chart").setAttribute("style", "height: 3.754%");
+}
+function AsiaFunction() {
+    document.getElementById("titleRegion").innerHTML = "Asia";
+    document.getElementById("headline1").innerHTML = "16274.1";
+    document.getElementById("text1").innerHTML = "Emission absolute of Asia in 2018";
+    document.getElementById("headline2").innerHTML = "52.301%";
+    document.getElementById("headline3").innerHTML = "25.62%";
+    document.getElementById("headline4").innerHTML = "3319.4";
+    document.getElementById("chart").setAttribute("style", "height: 50.197%");
+}
+function AustraliaFunction() {
+    document.getElementById("titleRegion").innerHTML = "Australia";
+    document.getElementById("headline1").innerHTML = "2100.5";
+    document.getElementById("text1").innerHTML = "Emission absolute of Australia in 2018";
+    document.getElementById("headline2").innerHTML = " 6.75%";
+    document.getElementById("headline3").innerHTML = "5.39%";
+    document.getElementById("headline4").innerHTML = "107.5";
+    document.getElementById("chart").setAttribute("style", "height: 6.654%");
+}
 //# sourceMappingURL=script.js.map
