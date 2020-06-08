@@ -1,5 +1,5 @@
 function EuropeFunction() {
-    document.getElementById(".titleRegion").innerHTML = "Europe";
+    document.getElementById("titleRegion").innerHTML = "Europe";
     document.getElementById("headline1").innerHTML = "4209.3";
     document.getElementById("text1").innerHTML = "Emission absolute of Europe in 2018";
     document.getElementById("headline2").innerHTML = "13.528%";
