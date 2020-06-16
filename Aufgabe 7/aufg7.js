@@ -22,5 +22,5 @@ function Drum(Lied) {
         Sample.play();
         i++;
     });
-} //i=i+1 }, 500); }
+} //i=i+1 }
 //# sourceMappingURL=aufg7.js.map

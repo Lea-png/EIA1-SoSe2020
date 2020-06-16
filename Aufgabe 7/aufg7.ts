@@ -26,4 +26,4 @@ var i: number = 0;
 setInterval(function() {
 var Sample = new Audio(Lied[i]);
 Sample.play();
-i++; //i=i+1 }, 500); }
+i++; //i=i+1 }
