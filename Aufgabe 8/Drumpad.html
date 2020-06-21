@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="aufg7.js" async></script>
+    <title>Drum pad</title>
+
+<style>
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+   button{
+        text-align: center;
+        padding: 150px 150px;
+        cursor: pointer;
+    }
+
+    #button1, #button2, #button3 {
+        background-color: #bcf4de;
+    }  
+    #button4, #button5, #button6, #button7 {
+background-color:#b7cdc2;
+    }
+#button8, #button9 {
+    background-color: #84A295;
+}
+
+#deletebutton{
+    background-color:  #ff33ff;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#deletebutton:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: "\f1f8"
+}
+
+#recordbutton{
+    background-color:  #e0ff33;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#recordbutton.notrecording{
+    background-color:  #e0ff33;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#recordbutton.recording{
+    background-color:  #ff3333;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#recordbutton:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: "\f130"
+}
+
+#playbutton{
+    background-color: #00ff00;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#playbutton:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: "\f04b";
+}
+
+
+#playbutton.play{
+    background-color: #00ff00;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#playbutton.play:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: "\f04b";
+}
+
+
+#playbutton.pause{
+    background-color: #ff0000;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+#playbutton.pause:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: '\f04c';
+}
+
+#playbutton.stop{
+    background-color: #ff0000;
+    text-align: center;
+    padding: 100px 100px;
+    cursor: pointer;
+}
+
+#playbutton.stop:before{
+    font-family: 'FontAwesome';
+    font-size:5em;
+    content: "\f04d"
+}
+
+button:hover {
+    background-color: #114477;
+  }
+
+
+.sound1{
+    volume: 
+}
+
+body {
+    text-align: center;
+}
+
+#playbutton{
+    background-color: #ff33ff;
+}
+
+#playbutton:hover {
+    background-color: #114477;
+  }
+
+#deletebutton{
+    background-color: #ff33ff;
+}
+
+#deletebutton:hover {
+    background-color: #114477;
+  }
+
+#recordbutton{
+    background-color: #ff33ff;
+}
+
+#recordbutton:hover {
+    background-color: #114477;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <i class="fa fa-stop fa-5x"></i>
+    <i class="fa fa-play fa-5x"></i>
+    <i class="fa fa-pause fa-5x"></i>
+    <i class="fa fa-microphone fa-5x"></i>
+    <i class="fa fa-trash fa-5x"></i>
+
+    <button id = "button1"> </button>
+    <button id = "button2"> </button>
+    <button id = "button3"> </button>
+    <br>
+    <button id = "button4"> </button>
+    <button id = "button5"> </button>
+    <button id = "button6"> </button>
+    <img id="playbutton"  src="play.png">
+    <br>
+    <button id = "button7"> </button>
+    <button id = "button8"> </button>
+    <button id = "button9"> </button>
+    <br>
+    <button id = "playbutton"></button> 
+    <button id = "deletebutton"> </button>
+    <button id = "recordbutton"> </button>
+    
+
+</body>
+</html>
