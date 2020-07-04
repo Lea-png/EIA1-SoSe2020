@@ -1,3 +1,4 @@
+"use strict";
 let todoitems = ["Zocken", "Essen", "Schlafen"];
 window.addEventListener("load", function () {
     var todofeld = document.querySelector(".addlist");
@@ -28,3 +29,4 @@ window.addEventListener("load", function () {
         }
     }
 });
+//# sourceMappingURL=aufg9.js.map
