@@ -1,3 +1,4 @@
+    
 /**
  * Die ToDos werden in dem Array todosText gespeichert
  * Jedes ToDo hat aber, neben dem ToDo-Text, einen zweiten
@@ -284,9 +285,16 @@ window.addEventListener("load", function(): void {
         action: function(i: any, wildcard: string): void {
             console.log("Neue Aufgabe wird erstellt: " + wildcard);
             todoObjects.unshift({
-                todosText: (wildcard),//WIESO WIRD WILDCARD NICHT IN AUF DER WEBSEITE ANGEZEIGT? XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                todosText: wildcard,  
                 todosChecked: false
+            
+            });
+            drawListToDOM();
         }
+        //drawListToDOM();
+        //todosDOMElement.innerHTML = wildcard;
+
+
     });
     
     function startContinuousArtyom(): void {
@@ -311,3 +319,4 @@ window.addEventListener("load", function(): void {
     
 
 });
+© 2020 GitHub, Inc.

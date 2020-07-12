@@ -217,10 +217,13 @@ window.addEventListener("load", function () {
         action: function (i, wildcard) {
             console.log("Neue Aufgabe wird erstellt: " + wildcard);
             todoObjects.unshift({
-                todosText: (wildcard),
+                todosText: wildcard,
                 todosChecked: false
             });
+            drawListToDOM();
         }
+        //drawListToDOM();
+        //todosDOMElement.innerHTML = wildcard;
     });
     function startContinuousArtyom() {
         artyom.fatality();
@@ -238,3 +241,4 @@ window.addEventListener("load", function () {
     }
     startContinuousArtyom();
 });
+//# sourceMappingURL=script.js.map
